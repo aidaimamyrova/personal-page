@@ -48,7 +48,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 95px 42px 118px 637px 480px;
+    grid-template-rows: 95px 40px 120px 637px 480px;
     grid-template-areas: 
     "one one one"
     "two six six"
