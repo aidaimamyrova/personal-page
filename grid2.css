@@ -6,7 +6,7 @@
 body {
     background-image: url(https://cdn.imgchest.com/files/j7kzcbm6r7m.png);
     background-repeat: no-repeat;
-    max-width: 1143px;
+    max-width: 1200px;
     min-height: 1583px;
     font-size: 2rem;
     opacity: .5;
@@ -54,7 +54,7 @@ body {
     "three three three"
     "four four seven"
     "five five five";
-    grid-template-columns: minmax(120px,200px) minmax(300px,570px) minmax(150px,400px);
+    grid-template-columns: minmax(20px,200px) minmax(20px,570px) minmax(20px,400px);
 }
 
 ul {
