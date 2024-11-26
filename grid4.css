@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://cdn.imgchest.com/files/j7kzcbm6r7m.png);
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: 1;
+    color: blue;
+    background-image: none;
+}
+
+.container > * {
+    border: 2px dashed blue;
+}
+
+.box1 {
+    grid-area: one;
+}
+
+.box2 {
+    grid-area: two;
+
+    background-color: #183a52;
+    max-width: 1200px;
+}
+
+.box3 {
+    grid-area: three;
+    background-image: url(https://th.bing.com/th/id/OIG3.oJeqddeZv.aM9qLRDLcb?w=270&h=270&c=6&r=0&o=5&dpr=2&pid=ImgGn);
+    color: white;
+    font-family: 'Roboto';
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-blend-mode: multiply;
+    background-color: grey;
+
+    background-position: center;
+}
+
+.box4 {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+}
+
+.box6 {
+    grid-area: six;
+}
+
+.box7 {
+    grid-area: seven;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(39px,95px) minmax(16px,284px) minmax(50px,120px) minmax(277px,637px) minmax(118px,480px);
+    grid-template-areas: 
+    "two two two"
+    "six three three"
+    "one four four "
+    "one  five five"
+    "seven seven seven";
+    grid-template-columns: minmax(120px,200px) minmax(300px,586px) minmax(150px,400px);
+}
+
+ul {
+    font-family: 'Roboto';
+    font-size: 12.7px;
+    font-weight: 500;
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #183a52;
+    color: #d7dbdd;
+    
+    max-width: 100%;
+    min-height: 100%;
+    flex-wrap: wrap;
+
+    text-transform: uppercase;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #d7dbdd;
+}
+
+@media( max-width: 500px) {
+    .container {
+        grid-template-columns: 100%;
+
+        grid-template-areas: 
+        "seven"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "one";
+    }
+}
+
+body > img:nth-of-type(1) {
+    display: none;
+}
+
+
+
+
+
